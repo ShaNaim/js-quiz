@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Jersey_10 } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
-const jersey_10 = Jersey_10({
+const jersey_10 = Open_Sans({
   subsets: ["latin"],
   weight: "400",
 });
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jersey_10.className} min-h-screen`}>{children}</body>
+      <body className={`${jersey_10.className} min-h-screen p-4`}>{children}</body>
     </html>
   );
 }
